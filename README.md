@@ -1,5 +1,7 @@
 # Data-Transfer-between-two-SRAMs-of-different-sizes
 
+Output Waveforms<br>
+
 ![waveform](https://user-images.githubusercontent.com/111141190/192156539-8a4d7899-b6a1-481c-bb9c-46a2ec4f6ff2.PNG)
 
 
