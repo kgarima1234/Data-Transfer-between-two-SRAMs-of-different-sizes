@@ -1,10 +1,7 @@
 # Data-Transfer-between-two-SRAMs-of-different-sizes
-Objective: To design FSM for transferring the data from one SRAM of 8bit*32 locations to another SRAM of 16bit*16 locations making a data transfer bridge between two modules of different sizes.
-Output Waveforms<br>
+Designed FSM for transferring the data from one SRAM of 8bit*32 locations to another SRAM of 16bit*16 locations making a data transfer bridge between two modules of different sizes.<br>
+Module one processes data and as the result, inside the SRM eight bit by 32 locations, Module one signals that it's finished operating and data must be resized and stored in an SRM 16 bit by 16 locations to be processed further by module which is our design behaves as a data transfer bridge between two subsystems.
 
-![waveform](https://user-images.githubusercontent.com/111141190/192156539-8a4d7899-b6a1-481c-bb9c-46a2ec4f6ff2.PNG)
-
-
-![waveform2](https://user-images.githubusercontent.com/111141190/192156562-d08e74de-e7c0-427c-9a55-e5b56968b961.PNG)
+The FSM rearranges data in groups Byte Address Zero and Byte Address one from SRM in two word address zero in SRAMs out. The same process continues until all addresses from SRM and are processed. The FSM signals that it finished transferring and resizing data so Module two can start reading it from the SRAM.<br>
 
 
